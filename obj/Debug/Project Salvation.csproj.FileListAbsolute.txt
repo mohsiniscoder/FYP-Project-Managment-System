@@ -1,0 +1,40 @@
+O:\4th Semester\DataBase ( Lab )\Project Salvation\bin\Debug\Project Salvation.exe.config
+O:\4th Semester\DataBase ( Lab )\Project Salvation\bin\Debug\Project Salvation.exe
+O:\4th Semester\DataBase ( Lab )\Project Salvation\bin\Debug\Project Salvation.pdb
+O:\4th Semester\DataBase ( Lab )\Project Salvation\bin\Debug\Guna.UI.dll
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project Salvation.csproj.AssemblyReference.cache
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.Properties.Resources.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.welcome_page.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project Salvation.csproj.GenerateResource.cache
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project Salvation.csproj.CoreCompileInputs.cache
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project Salvation.csproj.CopyComplete
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project Salvation.exe
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project Salvation.pdb
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.LoginForm.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.sign_up.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.Advisors.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.MainPage.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.ProjectForm.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.StudentForm.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.uc_add_student.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.uc_delete_student.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.uc_view_student.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.uc_add_project.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.GroupForm.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.uc_create_show_groups.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.uc_add_student_to_group_.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\bin\Debug\Guna.UI2.dll
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.uc_add_advisor.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.uc_project_advisor_add.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.uc_group_project.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.uc_add_evaluation.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.uc_mark_evaluations.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.uc_delete_project.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.MyBaseForm.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.uc_advisors_requests.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.uc_delete_advisor.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.uc_delete_groups.resources
+O:\4th Semester\DataBase ( Lab )\Project Salvation\bin\Debug\BouncyCastle.Crypto.dll
+O:\4th Semester\DataBase ( Lab )\Project Salvation\bin\Debug\itextsharp.dll
+O:\4th Semester\DataBase ( Lab )\Project Salvation\bin\Debug\itextsharp.xml
+O:\4th Semester\DataBase ( Lab )\Project Salvation\obj\Debug\Project_Salvation.UI.Reports.resources

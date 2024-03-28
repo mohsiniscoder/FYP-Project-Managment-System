@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA63E05B-6D44-4F85-94BE-C478F2E894D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_Salvation</RootNamespace>
+    <AssemblyName>Project Salvation</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\Advisor.cs" />
+    <Compile Include="BL\Evaluation.cs" />
+    <Compile Include="BL\Group.cs" />
+    <Compile Include="BL\GroupEvaluation.cs" />
+    <Compile Include="BL\GroupProject.cs" />
+    <Compile Include="BL\GroupStudent.cs" />
+    <Compile Include="BL\Person.cs" />
+    <Compile Include="BL\Project.cs" />
+    <Compile Include="BL\ProjectAdvisor.cs" />
+    <Compile Include="BL\Student.cs" />
+    <Compile Include="DL\AdvisorCRUD.cs" />
+    <Compile Include="DL\EvaluationCRUD.cs" />
+    <Compile Include="DL\Functions.cs" />
+    <Compile Include="DL\GroupCRUD.cs" />
+    <Compile Include="DL\GroupEvaluationCRUD.cs" />
+    <Compile Include="DL\GroupProjectCRUD.cs" />
+    <Compile Include="DL\GroupStudentCRUD.cs" />
+    <Compile Include="DL\PersonCRUD.cs" />
+    <Compile Include="DL\ProjectAdvisorCRUD.cs" />
+    <Compile Include="DL\ProjectCRUD.cs" />
+    <Compile Include="DL\ReportCRUD.cs" />
+    <Compile Include="DL\StudentCRUD.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Advisors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Advisors.Designer.cs">
+      <DependentUpon>Advisors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GroupForm.Designer.cs">
+      <DependentUpon>GroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MyBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MyBaseForm.Designer.cs">
+      <DependentUpon>MyBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ProjectForm.Designer.cs">
+      <DependentUpon>ProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\sign_up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\sign_up.Designer.cs">
+      <DependentUpon>sign_up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StudentForm.Designer.cs">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uc_add_advisor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uc_add_advisor.Designer.cs">
+      <DependentUpon>uc_add_advisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uc_add_evaluation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uc_add_evaluation.Designer.cs">
+      <DependentUpon>uc_add_evaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uc_add_project.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uc_add_project.Designer.cs">
+      <DependentUpon>uc_add_project.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uc_add_student.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uc_add_student.Designer.cs">
+      <DependentUpon>uc_add_student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uc_add_student_to_group_.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uc_add_student_to_group_.Designer.cs">
+      <DependentUpon>uc_add_student_to_group_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uc_advisors_requests.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uc_advisors_requests.Designer.cs">
+      <DependentUpon>uc_advisors_requests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uc_create_show_groups.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uc_create_show_groups.Designer.cs">
+      <DependentUpon>uc_create_show_groups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uc_delete_advisor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uc_delete_advisor.Designer.cs">
+      <DependentUpon>uc_delete_advisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uc_delete_groups.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uc_delete_groups.Designer.cs">
+      <DependentUpon>uc_delete_groups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uc_delete_project.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uc_delete_project.Designer.cs">
+      <DependentUpon>uc_delete_project.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uc_delete_student.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uc_delete_student.Designer.cs">
+      <DependentUpon>uc_delete_student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uc_group_project.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uc_group_project.Designer.cs">
+      <DependentUpon>uc_group_project.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uc_mark_evaluations.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uc_mark_evaluations.Designer.cs">
+      <DependentUpon>uc_mark_evaluations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uc_project_advisor_add.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uc_project_advisor_add.Designer.cs">
+      <DependentUpon>uc_project_advisor_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\uc_view_student.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uc_view_student.Designer.cs">
+      <DependentUpon>uc_view_student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\welcome_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\welcome_page.Designer.cs">
+      <DependentUpon>welcome_page.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\Advisors.resx">
+      <DependentUpon>Advisors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GroupForm.resx">
+      <DependentUpon>GroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MyBaseForm.resx">
+      <DependentUpon>MyBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ProjectForm.resx">
+      <DependentUpon>ProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\sign_up.resx">
+      <DependentUpon>sign_up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StudentForm.resx">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uc_add_advisor.resx">
+      <DependentUpon>uc_add_advisor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uc_add_evaluation.resx">
+      <DependentUpon>uc_add_evaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uc_add_project.resx">
+      <DependentUpon>uc_add_project.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uc_add_student.resx">
+      <DependentUpon>uc_add_student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uc_add_student_to_group_.resx">
+      <DependentUpon>uc_add_student_to_group_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uc_advisors_requests.resx">
+      <DependentUpon>uc_advisors_requests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uc_create_show_groups.resx">
+      <DependentUpon>uc_create_show_groups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uc_delete_advisor.resx">
+      <DependentUpon>uc_delete_advisor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uc_delete_groups.resx">
+      <DependentUpon>uc_delete_groups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uc_delete_project.resx">
+      <DependentUpon>uc_delete_project.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uc_delete_student.resx">
+      <DependentUpon>uc_delete_student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uc_group_project.resx">
+      <DependentUpon>uc_group_project.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uc_mark_evaluations.resx">
+      <DependentUpon>uc_mark_evaluations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uc_project_advisor_add.resx">
+      <DependentUpon>uc_project_advisor_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uc_view_student.resx">
+      <DependentUpon>uc_view_student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\welcome_page.resx">
+      <DependentUpon>welcome_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
